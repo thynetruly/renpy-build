@@ -41,7 +41,7 @@ def build(c: Context):
 
         c.run("""
         {{configure}} {{ sdl_cross_config }}
-        --disable-shared
+        --enable-shared
         --prefix="{{ install }}"
 
         --disable-render-metal

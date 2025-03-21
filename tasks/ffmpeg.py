@@ -79,7 +79,8 @@ def build(c: Context):
         --ranlib="{{ RANLIB }}"
 
         --enable-pic
-        --enable-static
+        --enable-shared
+        --disable-static
 
         --disable-all
         --disable-everything
@@ -212,7 +213,8 @@ def build_web(c: Context):
         --ranlib="{{ RANLIB }}"
 
         --enable-pic
-        --enable-static
+        --enable-shared
+        --disable-static
         --disable-stripping
 
         --disable-pthreads
